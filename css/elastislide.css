@@ -1,0 +1,114 @@
+.es-carousel-wrapper {
+	position:relative;
+	height:250px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+.es-carousel {
+overflow:hidden
+}
+
+.es-carousel ul {
+	display:none;
+}
+.es-carousel h5 {
+	font: bold 14px Verdana, Geneva, sans-serif;
+	width: 200px;
+	margin-bottom: 2px;
+	clear: both;
+	float: left;
+	display: block;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #666;
+}
+
+
+.es-carousel ul li {
+height:100%;
+float:left;
+display:block
+}
+
+.es-carousel ul li a {
+display:block;
+border-style:solid
+}
+
+.es-carousel .item {
+	height:230px;
+	width:200px;
+	float:left;
+	padding:0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #666666;
+	-moz-box-shadow: 0px 0px 10px 0px #666666;
+	box-shadow: 0px 0px 10px 0px #666666;
+	-o-box-shadow: 0px 0px 10px 0px #666666;
+	border: 1px solid #CCC;
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 90%, rgba(51,51,51,0.5) 99%); /* FF3.6+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 90%,rgba(51,51,51,0.5) 99%); /* Chrome10+,Safari5.1+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(90%,rgba(0,0,0,0)), color-stop(99%,rgba(51,51,51,0.5))); /* Chrome,Safari4+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0) 90%,rgba(51,51,51,0.5) 99%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0) 90%,rgba(51,51,51,0.5) 99%); /* IE10+ */
+	background: linear-gradient(top,  rgba(0,0,0,0) 90%,rgba(51,51,51,0.5) 99%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80333333',GradientType=0 ); /* IE6-9 */
+}
+.item .texto{
+	width:200px;
+	max-height:50%;
+	display:block;
+	padding: 1px;
+	margin-left: -100px;
+	position: relative;
+	left: 50%;
+	word-wrap:break-word;
+	font-size: 12px;	
+}
+.es-carousel .item img , .video{
+	background-color:#000;
+	display:block;
+	max-width:100%;
+	min-height:90px;
+}
+.next {
+	position:absolute;
+top:50%;
+margin-top:-40px;
+text-indent:-9000px;
+cursor:pointer;
+opacity:1;
+background-color:transparent;
+	background-image: url(../imagens/direita.png);
+	position: absolute;
+	background-repeat: no-repeat;
+	right: 0px;
+	background-position: right top;
+	height: 80px;
+	width: 25px;
+}
+
+.prev {
+	position:absolute;
+top:50%;
+margin-top:-40px;
+text-indent:-9000px;
+cursor:pointer;
+opacity:1;
+background-color:transparent;
+	background-image: url(../imagens/esquerda.png);
+	position: absolute;
+	left: 0px;
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 80px;
+	width: 25px;
+}
+
+.es-nav span:hover {
+opacity:1.0
+}

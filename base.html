@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Daltton Caetano</title>
+<link href="css/cssreset.css" rel="stylesheet" type="text/css" />
+<link href="css/estilo.css" rel="stylesheet" type="text/css" />
+<link href="css/nivo-slider.css" rel="stylesheet" type="text/css" />
+<link href="css/elastislide.css" rel="stylesheet" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript">
+var $j = jQuery.noConflict();
+$j(window).load(function() {
+	$j('#slider').nivoSlider();
+});
+</script>
+<style type="text/css">
+body {
+	background-image: url(imagens/bg.jpg);
+	background-repeat: repeat-x;
+	cursor: default;
+	overflow-x:hidden;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="topbar1"></div>
+<div class="topbar2"></div>
+<div class="topbar3"></div>
+<div class="content">
+<div class="toptitle">
+<div class="name1">Daltton</div>
+<div class="name2">Caetano</div>
+</div>
+<div class="verde">
+<div class="txt">Home  |  Notícias  |  Fotos  | Vídeos  |  Fale com Daltton</div>
+</div>
+</div>
+</div>
+<div class="body">
+  <div class="slide1">
+<div class="slidecontent" id="slider">
+<img src="imagens/toystory.jpg"/>
+<img src="images/up.jpg" title="Legenda" />
+<img src="imagens/walle.jpg" />
+<img src="imagens/nemo.jpg" />
+</div>
+</div>
+<div class="menubar">
+  <div class="txtativo">BIOGRAFIA</div><div class="txt">FORMAÇÃO</div><div class="txt">VEREADOR</div><div class="txt">PREFEITO</div>
+</div>
+<div class="noticias">
+<div class="titulo"><strong>NOTÍCIAS</strong> | Fique por dentro de todas as realizações de Daltton Caetano</div>
+<?php
+	include_once("cpainel/funcoes/funcoes.php");
+	include_once("cpainel/funcoes/conectar.php");
+?>
+<!-- Elastislide Carousel -->
+<div id="carousel" class="es-carousel-wrapper">
+<div class="es-carousel">
+<ul>
+<li>
+<a href="http://www.google.com.br">
+    <div class="item">
+    
+        <img src="imagens/nemo.jpg"/>
+        <div class="texto">
+            <h5>Teste Teste Teste</h5>
+            Teste Teste Teste 
+            Teste Teste Teste 
+            Teste Teste Teste 
+            Teste Teste Teste 
+            Teste Teste Teste 
+            Teste Teste Teste 
+            Teste Teste Teste 
+        </div>
+    </div>
+</a>
+</li>
+</ul>
+</div>
+<!-- End Elastislide Carousel -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+		<script type="text/javascript">
+			var $k = jQuery.noConflict();
+			$k('#carousel').elastislide({
+				imageW		: 200,
+				minItems	: 3,
+				border		: 0
+			});
+		
+		</script>
+</div>
+</div>
+<div class="midia">
+<div class="titulo">
+<div class="name1">Daltton</div>
+<div class="name2">Caetano</div>
+<div class="txt">Na mídia</div>
+</div>
+<div class="social"><img src="imagens/seta1.gif" height="60" /></div>
+<div class="social"><img src="imagens/orkut.png" alt="orkut" /><div class="socialtxt">Acompanhe-nos no Orkut!</div></div>
+<div class="social"><img src="imagens/facebook.png" alt="FaceBook" />
+<div class="socialtxt">Curta-nos no Facebook!</div></div>
+<div class="social"><img src="imagens/twitter.png" alt="Twitter" /><div class="socialtxt">Siga-nos no Twitter!</div></div>
+</div>
+
+<div class="foot">
+<div class="footer">
+<div class="noticia">
+  <img src="http://chriscoyier.github.com/MovingBoxes/demo/2.jpg"/>
+  <h1>Noticia 1</h1>
+</div>
+<div class="noticia">
+  <img src="http://chriscoyier.github.com/MovingBoxes/demo/2.jpg"/>
+  <h1>Noticia 2</h1>
+</div>
+<div class="noticia">
+  <img src="http://chriscoyier.github.com/MovingBoxes/demo/2.jpg"/>
+  <h1>Facebook</h1>
+</div>
+</div>
+<div class="verde"></div>
+</div>
+
+</div>
+</body>
+</html>
